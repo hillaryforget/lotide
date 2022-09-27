@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(allItems, lettersToCount) {
   const result = {};
  
-  for (let item of allItems) {
+  for (let item of allItems) { //allItems not iterable? Need Help!
     if (lettersToCount[item]) {
       if (result[item]) {
         result[item] += 1;
@@ -23,9 +23,8 @@ const countLetters = function(allItems, lettersToCount) {
   return result;
 };
 
-const myLetters = 'LHL';
-const result1 = countLetters(myLetters, ('LHL'));
+const myLetters = 'lighthouse in the house';
+const result1 = countLetters(myLetters, {'lighthouse in the house': true});
 
 //Test
-assertEqual(countLetters(result1["L"], 2));
-assertEqual(countLetters(result1["H"], 1));
+assertEqual(countLetters(result1["l"], 1));
