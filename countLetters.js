@@ -7,24 +7,26 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//countLetters
-const countLetters = function(allItems, lettersToCount) {
-  const result = {};
- 
-  for (let item of allItems) { //allItems not iterable? Need Help!
-    if (lettersToCount[item]) {
-      if (result[item]) {
-        result[item] += 1;
-      } else {
-        result[item] = 1;
-      }
+//COUNTLETTERS
+const countLetters = function(string) {
+  let result = {};
+  let newString = string.split('');
+
+  for (let letter of newString) {
+    if (result[letter]) {
+      result[letter] += 1;
+    } else {
+      result[letter] = 1;
     }
   }
   return result;
 };
 
-const myLetters = 'lighthouse in the house';
-const result1 = countLetters(myLetters, {'lighthouse in the house': true});
+const myString = "lighthouse in the house";
+console.log(countLetters(myString));
 
-//Test
-assertEqual(countLetters(result1["l"], 1));
+//TEST
+console.log(assertEqual(countLetters(myString)['l'], 1));
+console.log(assertEqual(countLetters(myString)['i'], 2));
+console.log(assertEqual(countLetters(myString)['h'], 4));
+console.log(assertEqual(countLetters(myString)[' '], 3));
