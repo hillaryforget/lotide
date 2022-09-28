@@ -15,11 +15,13 @@ const bestTvShowsByGenre = {
 
 const tvShow = [];
 
-const findKeyByValue = function() {
-
-  for (const value of tvShow) {
-    const bestTvShowsByGenre = bestTvShowsByGenre[value.bestTvShowsByGenre];
-    console.log(Object.keys(bestTvShowsByGenre));
+const findKeyByValue = function(tvShows, value) {
+  //console.log('test', tvShows, value);
+  for (const key of Object.keys(tvShows)) {
+    if (value === tvShows[key]) {
+      return key;
+    }
+    //console.log(tvShows[key]);
   }
 };
 
