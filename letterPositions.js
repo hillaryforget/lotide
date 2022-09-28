@@ -19,13 +19,23 @@ const eqArrays = function(array1, array2) {
 };
 
 //LETTERPOSITIONS
+
+//output each letter : where they are in the index
 const letterPositions = function(sentence) {
   const results = {};
+  
   // logic to update results here
   for (let i = 0; i < sentence.length; i++) {
-    if ()
-    return results;
-}
+    let character = sentence[i];
+    if (character !== ' ') {
+      if (results[character]) {
+        results[character].push(i);
+      } else {
+        results[character] = [i];
+      }
+    }
+  }
+  return results;
 };
 
 //TEST
