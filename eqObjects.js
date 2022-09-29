@@ -29,38 +29,24 @@ const eqObjects = function(object1, object2) {
   if (key1.length !== key2.length) {
     return false;
   }
-  // if (!eqArrays(key1, key2)) {
-  //   return false;
-  // } else {
-    
+
   for (let i = 0; i < key1.length; i++) {
     const value1 = object1[key1[i]];
-    console.log('test value', value1);
 
     const value2 = object2[key1[i]];
-    console.log('test value2', value2);
-
     console.log(Array.isArray(value1));
 
     if (Array.isArray(value1)) {
-      console.log('value1 is array');
       if (eqArrays(value1, value2)) {
-        console.log('arrays are the same');
         return true;
       }
-        
     }
     if (value1 !== value2) {
-      console.log('values are not the same', value1, value2);
       return false;
     }
   }
-  console.log('returning true');
   return true;
 };
-
-//if (console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
-//console.log('test', eqArrays(key1, key2)); // => false)
 
 //if both values are arrays: pass them to eqArrays, returns true.
 //Otherwise (else): assume that they are primitives and continue to use === to compare the two values.
