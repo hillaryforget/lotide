@@ -13,7 +13,7 @@ const bestTvShowsByGenre = {
   drama: 'The Wire'
 };
 
-const tvShow = [];
+const tvShows = [];
 
 const findKeyByValue = function(tvShows, value) {
   //console.log('test', tvShows, value);
