@@ -1,21 +1,34 @@
-const assertEqual = require('../assertEqual');
+//const assertEqual = require('../assertEqual');
+
+const assert = require('chai').assert;
+const assertEqual   = require('../assertEqual');
+
+describe("#assertEqual", () => {
+  it("returns 'true' for ['1'], ['1']", () => {
+    assert.strictEqual(assertEqual(['1'], ['1']), true);
+  });
+});
+
+it("returns 'false' for ['cat'], ['dog']", () => {
+  assert.strictEqual(assertEqual(['cat'], ['dog']), false);
+});
 
 // ASSERTEQUALTEST
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
 
-// Comparing identical strings
-assertEqual("Kitty", "Kitty");
+// // Comparing identical strings
+// assertEqual("Kitty", "Kitty");
 
-// Comparing non-identical strings
-assertEqual("Cat", "Dog");
-assertEqual("high", "low");
+// // Comparing non-identical strings
+// assertEqual("Cat", "Dog");
+// assertEqual("high", "low");
 
-// Comparing identical numbers
-assertEqual(7, 7);
-assertEqual(77, 77.01);
+// // Comparing identical numbers
+// assertEqual(7, 7);
+// assertEqual(77, 77.01);
 
-// Comparing non-identical numbers
-assertEqual(1, 2);
-assertEqual(NaN, 0);
+// // Comparing non-identical numbers
+// assertEqual(1, 2);
+// assertEqual(NaN, 0);
 
