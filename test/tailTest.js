@@ -1,5 +1,6 @@
+//MOCHA/CHAI TEST FOR TAIL
+
 // const assertEqual = require('../assertEqual');
-// const tail = require('../tail');
 
 const assert = require('chai').assert;
 const tail   = require('../tail');

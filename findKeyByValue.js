@@ -1,22 +1,20 @@
-// const assertEqual = require('./assertEqual');
+//FINDKEYBYVALUE FUNCTION - Write a function that takes in an object and a value and returns the first key that corresponds to that value.
 
-// eslint-disable-next-line no-unused-vars
-const bestTvShowsByGenre = {
-  sciFi: 'The Expanse',
-  comedy: 'Brooklyn Nine-Nine',
-  drama: 'The Wire'
-};
+//const assertEqual = require('./assertEqual');
 
-// eslint-disable-next-line no-unused-vars
-const tvShows = [];
+// const bestTvShowsByGenre = {
+//   sciFi: 'The Expanse',
+//   comedy: 'Brooklyn Nine-Nine',
+//   drama: 'The Wire'
+// };
+
+// const tvShows = [];
 
 const findKeyByValue = function(tvShows, value) {
-  //console.log('test', tvShows, value);
   for (const key of Object.keys(tvShows)) {
     if (value === tvShows[key]) {
       return key;
     }
-    //console.log(tvShows[key]);
   }
 };
 

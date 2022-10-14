@@ -1,7 +1,7 @@
-//const eqArrays = require('./eqArrays');
+//WITHOUT FUNCTION - Write a function that takes in a source array and an itemsToRemove arrays and returns only the items from the source array that are not in the itemsToRemove array.
+
 //const assertArraysEqual = require('./assertArraysEqual');
 
-//WITHOUT
 const without = function(source, itemsToRemove) {
   let newArr = [];
   for (let i = 0; i < source.length; i++) {
@@ -20,6 +20,5 @@ module.exports = without;
 // console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"])
 
 // const words = ["hello", "world", "lighthouse"];
-// without(words, ["lighthouse"]); // no need to capture return value for this test case
-// // Make sure the original array was not altered by the without function
+// without(words, ["lighthouse"]);
 // assertArraysEqual(words, ["hello", "world", "lighthouse"]);

@@ -1,3 +1,5 @@
+//MOCHA/CHAI TEST FOR EQARRAYS
+
 const assert = require('chai').assert;
 const eqArrays   = require('../eqArrays');
 

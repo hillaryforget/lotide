@@ -1,11 +1,9 @@
-const assertArraysEqual = require('./assertArraysEqual');
-const eqArrays = require('./eqArrays');
+//LETTERPOSITIONS FUNCTION - Write a function that takes in a string and returns all indices of letter positions in the string.
 
-//LETTERPOSITIONS
-//output each letter : where they are in the index
+//const assertArraysEqual = require('./assertArraysEqual');
+
 const letterPositions = function(sentence) {
   const results = {};
-  // logic to update results here
   for (let i = 0; i < sentence.length; i++) {
     let character = sentence[i];
     if (character !== ' ') {

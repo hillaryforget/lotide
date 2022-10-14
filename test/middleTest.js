@@ -1,4 +1,4 @@
-// const middle = require('../middle');
+//MOCHA/CHAI TEST FOR MIDDLE
 
 const assert = require('chai').assert;
 const middle   = require('../middle');

@@ -1,6 +1,7 @@
+// EQOBJECTS FUNCTION - Write a function that takes in 2 objects and return true if they are equal and false otherwise.
+
 const eqObjects = require('./eqObjects');
 
-// FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected) === true) {
@@ -13,5 +14,5 @@ const assertObjectsEqual = function(actual, expected) {
 module.exports = assertObjectsEqual;
 
 //TEST
-assertObjectsEqual({a: 1, b: 2}, {b: 2, a: 1});
+//assertObjectsEqual({a: 1, b: 2}, {b: 2, a: 1});
 

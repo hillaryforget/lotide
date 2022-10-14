@@ -1,6 +1,7 @@
-const assertEqual = require('./assertEqual');
+//COUNTLETTERS FUNCTION - Write a function that takes in a sentence and returns a count of each of the letters in the sentence.
 
-//COUNTLETTERS
+//const assertEqual = require('./assertEqual');
+
 const countLetters = function(string) {
   let result = {};
   let newString = string.split('');

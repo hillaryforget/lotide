@@ -1,4 +1,5 @@
-// const head = require('../head');
+//MOCHA/CHAI TEST FOR HEAD
+
 // const assertEqual = require('../assertEqual');
 
 const assert = require('chai').assert;

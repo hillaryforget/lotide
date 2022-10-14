@@ -1,7 +1,5 @@
-// const eqArrays = require('./eqArrays');
-// const assertArraysEqual = require('./assertArraysEqual');
+//FLATTEN FUNCTION - Write a function that takes in an array that contains elements including nested array of elements and returns a flattened version of the array.
 
-//FLATTEN
 const flatten = function(arr) {
   let newArr = [];
 

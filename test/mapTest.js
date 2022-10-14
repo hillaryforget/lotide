@@ -1,3 +1,5 @@
+//MOCHA/CHAI TEST FOR MAP
+
 const assert = require('chai').assert;
 const map   = require('../map');
 
