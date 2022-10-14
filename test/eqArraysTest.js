@@ -1,5 +1,3 @@
-//const eqArrays = require('../eqArrays');
-
 const assert = require('chai').assert;
 const eqArrays   = require('../eqArrays');
 

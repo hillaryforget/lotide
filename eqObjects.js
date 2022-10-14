@@ -1,21 +1,5 @@
-// ASSERTEQUAL
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion ✅✅✅Passed: ${actual === expected}`);
-  } else {
-    console.log(`Assertion 🛑🛑🛑Failed: ${actual !== expected}`);
-  }
-};
-
-//EQARRAYS
-const eqArrays = function(array1, array2) {
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
+const assertEqual = require('./assertEqual');
 
 //EQOBJECTS
 // Returns true if both objects have identical keys with identical values.
@@ -48,13 +32,15 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+module.exports = eqObjects;
+
 //if both values are arrays: pass them to eqArrays, returns true.
 //Otherwise (else): assume that they are primitives and continue to use === to compare the two values.
 
 //TEST
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertEqual(eqObjects(cd, dc), true); // => true
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// assertEqual(eqObjects(cd, dc), true); // => true
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertEqual(eqObjects(cd, cd2), false); // => false
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// assertEqual(eqObjects(cd, cd2), false); // => false
