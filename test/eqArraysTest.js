@@ -1,7 +1,7 @@
 //MOCHA/CHAI TEST FOR EQARRAYS
 
 const assert = require('chai').assert;
-const eqArrays   = require('../eqArrays');
+const eqArrays = require('../eqArrays');
 
 describe("#eqArrays", () => {
   it("returns 'true' for ['1', '2', '3'], ['1', '2', '3']", () => {
