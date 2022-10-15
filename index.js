@@ -26,6 +26,6 @@ module.exports = {
   letterPositions,
   countOnly,
   map,
-  eqObjects:eqObjects,
+  eqObjects,
   takeUntil
 };
